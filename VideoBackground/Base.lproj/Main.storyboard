@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoBackground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z7B-aY-pdc">
+                                <rect key="frame" x="180" y="150" width="240" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="36k-eo-Xga"/>
+                                    <constraint firstAttribute="height" constant="32" id="ODB-qh-omT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP5-fy-CJa">
+                                <rect key="frame" x="134" y="535" width="333" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="9Hw-7R-8iQ"/>
+                                    <constraint firstAttribute="height" constant="45" id="SaY-ul-bhf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" red="0.1843137255" green="0.77647058820000003" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-ru-UFc">
+                                <rect key="frame" x="134" y="482" width="333" height="45"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="i3V-AJ-RWN"/>
+                                    <constraint firstAttribute="height" constant="45" id="sSW-fe-tTS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z7B-aY-pdc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="01q-Lc-b3h">
+                                <variation key="widthClass=compact" constant="120"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UP5-fy-CJa" secondAttribute="bottom" constant="20" id="Gk1-Z2-q1p"/>
+                            <constraint firstItem="Z7B-aY-pdc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hCl-eA-dl0"/>
+                            <constraint firstItem="Wch-ru-UFc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rLa-k4-ei5"/>
+                            <constraint firstItem="UP5-fy-CJa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t8T-rO-ucc"/>
+                            <constraint firstItem="UP5-fy-CJa" firstAttribute="top" secondItem="Wch-ru-UFc" secondAttribute="bottom" constant="8" id="wvr-gR-R9h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Wch-ru-UFc" id="2dr-dD-JrQ"/>
+                        <outlet property="signupButton" destination="UP5-fy-CJa" id="Y7O-qI-8hb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="351"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="645" height="83"/>
+    </resources>
+</document>
